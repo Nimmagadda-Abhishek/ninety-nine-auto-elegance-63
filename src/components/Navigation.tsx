@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "./ui/button";
-import { Menu, X, Car, Phone } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,9 +18,11 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="relative">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <Car className="h-6 w-6 text-white" />
-              </div>
+              <img
+                src="/favicon.ico"   // <-- your logo inside public folder
+                alt="99cars Logo"
+                className="w-10 h-10 rounded-lg object-contain"
+              />
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-600 rounded-full"></div>
             </div>
             <div className="flex flex-col">
