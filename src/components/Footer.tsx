@@ -1,4 +1,4 @@
-import { Car, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
 const Footer = () => {
   const quickLinks = [
@@ -38,9 +38,11 @@ const Footer = () => {
           <div className="space-y-4 sm:space-y-6 text-center sm:text-left">
             <div className="flex items-center space-x-2 justify-center sm:justify-start">
               <div className="relative">
-                <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                  <Car className="h-5 w-5 text-white" />
-                </div>
+                <img
+                  src="/favicon.ico"   // <-- favicon in public folder
+                  alt="99cars Logo"
+                  className="w-8 h-8 rounded-lg object-contain"
+                />
                 <div className="absolute -top-1 -right-1 w-2 h-2 bg-red-600 rounded-full"></div>
               </div>
               <div className="flex flex-col">
@@ -113,54 +115,4 @@ const Footer = () => {
             </h3>
             <div className="space-y-3 sm:space-y-4">
               <div className="flex items-center space-x-3 justify-center sm:justify-start">
-                <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
-                <div>
-                  <p className="text-muted-foreground text-sm sm:text-base">8125122133</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-3 justify-center sm:justify-start">
-                <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
-                <div>
-                  <p className="text-muted-foreground text-sm sm:text-base">99carsdelhi@gmail.com</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-3 justify-center sm:justify-start">
-                <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-primary mt-1" />
-                <div>
-                  <p className="text-muted-foreground text-xs sm:text-sm">3rd floor, Aruna inn</p>
-                  <p className="text-muted-foreground text-xs sm:text-sm">Shankarmattam Main Road</p>
-                  <p className="text-muted-foreground text-xs sm:text-sm">Visakhapatnam 530016</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom Bar */}
-        <div className="border-t border-border/50 mt-8 sm:mt-12 pt-6 sm:pt-8">
-          <div className="flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0">
-            <div className="text-muted-foreground text-xs sm:text-sm">
-              © 2024 99cars.in. All rights reserved.
-            </div>
-            
-            <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 md:space-x-6 text-xs sm:text-sm text-muted-foreground text-center">
-              <a href="#" className="hover:text-primary transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="hover:text-primary transition-colors">
-                Terms of Service
-              </a>
-              <a href="#" className="hover:text-primary transition-colors">
-                Cookie Policy
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
-};
-
-export default Footer;
+                <Phone className="h-4 w-4 sm:h-
