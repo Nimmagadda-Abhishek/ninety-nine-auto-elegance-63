@@ -16,7 +16,7 @@ const WhatsAppFloat = () => {
       aria-label="Contact us on WhatsApp"
     >
       <img
-        src="/whatsapp-icon.png"
+        src="/whatsapp.png"
         alt="WhatsApp"
         className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14"
       />
